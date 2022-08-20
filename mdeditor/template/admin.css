@@ -1,0 +1,7 @@
+.editor-toolbar button{
+    color:#333;
+}
+
+.editor-toolbar.fullscreen, CodeMirror-wrap.CodeMirror-fullscreen {
+    z-index:996 !important;
+}
