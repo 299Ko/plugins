@@ -27,16 +27,18 @@ function mdeditorAdmin() {
     echo "<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.css'>
         <script src='https://cdn.jsdelivr.net/npm/easymde/dist/easymde.min.js'></script>
         <script>
-            var editor = document.getElementsByClassName('editor')[0];
-            if (!!editor){
-                const easyMDE = new EasyMDE({
-                toolbar: ['bold','italic','heading','|',
-                'code','quote','unordered-list','ordered-list','table','horizontal-rule','|',
-                'link','image','|',
-                'preview','side-by-side','fullscreen','|',
-                'guide'],
-                spellChecker: false,
-                element: editor});
+            var editors = document.getElementsByClassName('editor');
+            if (!!editors){
+                for (let editor of editors) {
+                    const easyMDE = new EasyMDE({
+                    toolbar: ['bold','italic','heading','|',
+                    'code','quote','unordered-list','ordered-list','table','horizontal-rule','|',
+                    'link','image','|',
+                    'preview','side-by-side','fullscreen','|',
+                    'guide'],
+                    spellChecker: false,
+                    element: editor});
+                }
             }
         </script>";
 }
