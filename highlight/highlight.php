@@ -41,7 +41,7 @@ function highlightGetThemes() {
 
 function highlightEndFrontHead() {
     $plugin = pluginsManager::getInstance()->getPlugin('highlight');
-    echo '<link rel="stylesheet" href="' . highlightGetThemeCSSUrl($plugin->getConfigVal('theme')) . '">';
+    echo '<link rel="stylesheet" href="' . highlightGetThemeCSSUrl($plugin->getConfigVal('theme')) . '" type="text/css"/>';
     echo '<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>';
 }
 

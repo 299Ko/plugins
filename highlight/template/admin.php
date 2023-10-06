@@ -10,7 +10,7 @@ defined('ROOT') OR exit('No direct script access allowed');
 
 include_once(ROOT . 'admin/header.php');
 ?>
-<form method="post" action="index.php?p=highlight&action=saveconf" enctype="multipart/form-data">
+<form method="post" action="?p=highlight&action=saveconf" enctype="multipart/form-data">
     <?php show::adminTokenField(); ?>
     <h3>Paramètres</h3>
     <p>

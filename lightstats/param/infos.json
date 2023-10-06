@@ -1,0 +1,8 @@
+{
+    "name" : "LightStats",
+    "icon" : "fa-solid fa-chart-simple",
+    "description" : "Statistiques simples et respectueuses des visiteurs",
+    "authorEmail" : "mx.koder@gmail.com",
+    "authorWebsite" : "https://299ko.ovh",
+    "version" : "1.3.1"
+}
